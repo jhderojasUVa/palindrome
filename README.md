@@ -45,21 +45,21 @@ palindrome/
 ```
 
 Readme.md: this file
-package.json: necesary for npm. Where it is the version needed for runing.
-index.html: index file of the application, here is the root component.
-components/: where the two components are (CSS and JS files).
-inputtext.js/inputtext.css: the form component with store the text and send to the component who test it.
-testpalindrome.js/testpalindrome.css: the component who test if its a palindrome and put yes or no.
-App.js: root component of the App (principal) where calls the first component (the form component, see notes after).
-App.test.js: not used but it can be for testing.
-index.css: general styles
+package.json: necesary for npm. Where it is the version needed for runing.<br/>
+index.html: index file of the application, here is the root component.<br/>
+components/: where the two components are (CSS and JS files).<br/>
+inputtext.js/inputtext.css: the form component with store the text and send to the component who test it.<br/>
+testpalindrome.js/testpalindrome.css: the component who test if its a palindrome and put yes or no.<br/>
+App.js: root component of the App (principal) where calls the first component (the form component, see notes after).<br/>
+App.test.js: not used but it can be for testing.<br/>
+index.css: general styles<br/>
 index.js: the base of React. It can be more complex but the app don't need it.
 
 ## How it works
 
 index.js -> App.js -> components/inputtext <-> components/testpalindrome
 
-From the index.js it mount the App.js who import the first component (the form component) wich need to import the testpalindrome.
+From the index.js it mount the App.js who import the first component (the form component) wich need to import the testpalindrome.<br/>
 Eveyone import they css file (in order to separate, for easy reading and know what are included in).
 
 The index.js will search for the div with id name root and put inside the App component who their only purpose it's to include the inputtext one. The inputtext uses one state for the text (called value, an string) we must test if it's a palindrome. I have used an input that when it changes (you write on it) it fires a handleChangeText who change the  text (value, remember). When you change it, it change the component content, easy. On the rendering of the component I use to import other component (it says that two components are needed, but it can be done on this component) called TestPalindrome. I pass the string from inputtext to testpalindrome components and this resolve if it's a palindrome or not and render a simply "yes" or "no" with some css artifacts. Nothing complex. TestPalindrome need two things, a property wich is the text (string) will test if it's a palindrome and a state wich is if is a palindrome or not (boolean).
@@ -70,7 +70,7 @@ Inside are the documentation of how it works.
 
 The easy way for seen it:
 
-npm install
+npm install<br/>
 npm start
 
 You can build it if you want, but not needed.
