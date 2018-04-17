@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 2em;
+  padding: 2em;
+  font-family: sans-serif;
+  background-color: rgb(190, 190, 190);
+}
+
+h1 {
+  font: 3em Arial;
+  color: white;
+  margin: 1em;
+  border-bottom: 1px dotted black;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  -webkit-text-stroke: 1px black;
+}
+
+.thebox {
+  border: 1px solid rgb(130, 130, 130);
+  background-color: rgba(210, 210, 210);
+}
